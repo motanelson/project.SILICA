@@ -9,14 +9,18 @@ super class HelloWorld version 65:0
   }
 
   public static Method main:"()V" 
-    stack 2  locals 1
+    stack 5  locals 1
   {
          new               class x;
          dup;
          invokespecial     Method x."<init>":"()V";
          astore_0;
          aload_0;
-         invokevirtual     Method x.box:"()V";
+         iconst_0;
+         iconst_0;
+         bipush            10;
+         bipush            10;
+         invokevirtual     Method x.box:"(IIII)V";
          return;
   }
 
